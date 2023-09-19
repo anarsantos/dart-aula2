@@ -6,5 +6,5 @@ main() {
     sobrenome: 'Silva',
     );
 
-  print('O sobrenome é ${joao.sobrenome}');  
+  print('O completo é ${joao.nomeCompleto}.');  
 }

@@ -15,8 +15,19 @@ class Pessoa {
   }*/
 
   //Uma terceira forma de inicializar a variável é usar parâmetros nomeados no Construtor
+  /*late String _nome; 
+  //O underline indica que a propriedade agora é privada. P/ trabalhar com ela deve-se usar os métodos: get e set. E colocar o operador "late" na frente.
+  String sobrenome;
+
+  get nome => this._nome;
+  set nome(n) => this._nome = n;
+
+  Pessoa({required this.sobrenome});*/
+
   String nome;
   String sobrenome;
 
-  Pessoa({required this.nome, required this.sobrenome}); 
+  get nomeCompleto => this.nome + ' ' + this.sobrenome; //Propriedade computada
+  
+  Pessoa({required this.nome, required this.sobrenome});
 }
